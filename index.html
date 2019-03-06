@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            App Project
+        </title>
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+    <body>
+        <h1>Phone Directory</h1>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormsubmit();" autocomplete="off">
+                        <div>
+                            <label>Name</label><label class="validation-error hide" id="NameValidationError">This field is required.</label>
+                            <input type="text" name="Name"  id="Name">
+                         </div> 
+                         <div>
+                             <label>Phone</label> 
+                             <input type="text" name="Phone" id="Phone">
+                        </div>
+                        <div class="form-action-button">
+                            <input type="submit" value="submit">
+                        </div>
+                    </form>      
+                </td>
+                <td>
+                    <table class="list" id="subscriberlist">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Phone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                 </table>
+                </td>
+            </tr>
+        </table>
+         <script src="script.js"></script>
+   </body>
+    
+</html>
